@@ -2,9 +2,17 @@
 html, body {
     height: 100vh;
     width: 100vw;
+    
 }
 body {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
 }
+
+h1, figure, img, article, section,th,td,table  {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
