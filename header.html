@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*Reset*/
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+body {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+/*Alteracoes padrao*/
+.margem-figure{
+    margin: 0;
+}
+.padding-ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*header */
+
+.cabecalho{
+    width: 100%;
+    height: 30%;
+}
+.cabecalho__img{
+    width: 100%;
+    height: 100%;
+    position: absolut;
+}
+.cabecalho__img__trem{
+    width: 100%;
+}
+.cabecalho__menu{
+    width: 100%;
+    position: relative;
+    top: -10%;
+}
+.cabecalho__img__menu__lista{
+    background-color: gray;
+    text-align: center;
+    color: white;
+    margin: -4px;
+}
+.cabecalho__img__menu__lista li{
+    display: inline-block;
+    width: 32%;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.cabecalho__img__menu__lista li:hover{
+    background-color: black;
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <figure class="cabecalho__img margem-figure">
+            <img class="cabecalho__img__trem" src="img/trilho.png" alt="trilho aereo">
+            <nav class="cabecalho__img__menu ">
+                    <ul class="cabecalho__img__menu__lista padding-ul">
+                        <li>Tech</li>
+                        <li>Ux</li>
+                        <li>Me</li>
+                    </ul>
+            </nav>
+        </figure>
+    </header>
+</body>
+</html>

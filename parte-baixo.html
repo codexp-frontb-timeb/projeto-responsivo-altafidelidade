@@ -4,9 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+    
+    html, body {
+    height: 100vh;
+    width: 100vw;
+    }
+    
+    body {
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(233, 227, 227)
+    }
+
+    /* lista de links com duas colunas padrão para celular */
+        .secao-de-itens{
+            width: 100%;
+            display: inline-block;
+            text-align: center;        
+        }
+
+        .lista-itens{
+        box-sizing: border-box;
+            display: inline-block;
+        }
+
+        .lista-itens li{
+            display: inline-block;
+            list-style-type: none;
+            box-sizing: border-box;
+            width: 40%;
+            text-align: left;
+        }
+
+
+        .lista-itens__links{
+            color: rgb(71, 83, 107);
+            text-decoration: none;
+            display: inline;
+            font-weight: bold;
+            padding: 10%;
+            box-sizing: border-box;         
+        }
+    /* fim da lista de links com duas colunas padrão para celular */
+
+    /* paragráfo que foi posicionado após a lista de links em duas colunas */
+        .texto-produtos{
+            text-align: justify;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .texto-produtos__destaque{
+            color: rgb(71, 83, 107);
+        }
+        
+    /*  fim paragráfo que foi posicionado após a lista de links em duas colunas */
+
+
+    /* padrão para tablet */
+    @media(min-width: 768px){
+
+
+        .secao-de-itens{
+        text-align: left;        
+        }
+
+        .lista-itens li{
+            width: 30%;
+        }
+
+    }
+    /* fim padrão para tablet */
+
+    /* padrão para celular */
+    @media(min-width: 992px){
+
+        .secao-de-itens{
+            width: 100%;
+        }
+
+        .lista-itens li{
+            width: 40%;
+        }
+        
+        .lista-itens__links:hover{
+        color: red;
+        font-size: 1.2em;
+        }
+    
+    }
+
+    
+
+    /* fim padrão para celular */
+
+    </style>
+
+
     <title>Alta fidelidade</title>
 </head>
 <body>
-    
+
+
+<section class="secao-de-itens">
+<ul class="lista-itens">
+    <li><a href="" class="lista-itens__links">item1</a></li>
+    <li><a href="" class="lista-itens__links">item1</a></li>
+    <li><a href="" class="lista-itens__links">item1</a></li>
+    <li><a href="" class="lista-itens__links">item1</a></li>
+    <li><a href="" class="lista-itens__links">item1</a></li>
+    <li><a href="" class="lista-itens__links">item1</a></li>
+    <li><a href="" class="lista-itens__links">item1</a></li>
+    <li><a href="" class="lista-itens__links">item1</a></li>
+    <li><a href="" class="lista-itens__links">item1</a></li>
+    <li><a href="" class="lista-itens__links">item1</a></li>
+    <li><a href="" class="lista-itens__links">item1</a></li>
+    <li><a href="" class="lista-itens__links">item1</a></li>
+</ul>
+</section>
+
+<p class="texto-produtos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, earum placeat culpa dolore cupiditate ea magni quam nobis harum doloremque ad rem reprehenderit. Beatae illo dolor, debitis voluptas rem distinctio!
+Fuga nesciunt dolorum adipisci quis quo voluptatem eligendi, natus <strong class="texto-produtos__destaque">cupiditate quidem ab eaque facilis numquam!</strong> Rem odit, vero enim alias a dolores earum nihil fugiat soluta rerum corporis possimus excepturi.
+!</p>
+
+
+
+
+
+
+
 </body>
 </html>
