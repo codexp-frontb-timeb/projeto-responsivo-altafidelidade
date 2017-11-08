@@ -20,61 +20,85 @@
         background-color: rgb(233, 227, 227)
     }
 
-    .secao-de-itens{
-        width: 100%;
-        display: inline-block;
-        text-align: center;        
-    }
+    /* lista de links com duas colunas padrão para celular */
+        .secao-de-itens{
+            width: 100%;
+            display: inline-block;
+            text-align: center;        
+        }
 
-    .lista-itens{
-       box-sizing: border-box;
-        display: inline-block;
-    }
-
-    .lista-itens li{
-        display: inline-block;
-        list-style-type: none;
+        .lista-itens{
         box-sizing: border-box;
-        width: 40%;
-        text-align: left;
+            display: inline-block;
+        }
+
+        .lista-itens li{
+            display: inline-block;
+            list-style-type: none;
+            box-sizing: border-box;
+            width: 40%;
+            text-align: left;
+        }
+
+
+        .lista-itens__links{
+            color: rgb(71, 83, 107);
+            text-decoration: none;
+            display: inline;
+            font-weight: bold;
+            padding: 10%;
+            box-sizing: border-box;         
+        }
+    /* fim da lista de links com duas colunas padrão para celular */
+
+    /* paragráfo que foi posicionado após a lista de links em duas colunas */
+        .texto-produtos{
+            text-align: justify;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .texto-produtos__destaque{
+            color: rgb(71, 83, 107);
+        }
+        
+    /*  fim paragráfo que foi posicionado após a lista de links em duas colunas */
+
+
+    @media(min-width: 768px){
+
+
+        .secao-de-itens{
+        text-align: left;        
+        }
+
+        .lista-itens li{
+            width: 30%;
+        }
+
+    }
+    
+    
+    @media(min-width: 992px){
+
+        .secao-de-itens{
+            width: 100%;
+        }
+
+        .lista-itens li{
+            width: 40%;
+        }
     }
 
 
-    .lista-itens__links{
-        color: rgb(71, 83, 107);
-        text-decoration: none;
-        display: inline;
-        font-weight: bold;
-        padding: 10%;
-        box-sizing: border-box;         
-    }
-
-    .texto-produtos{
-        text-align: justify;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 10px;
-    }
-
-    .texto-produtos__destaque{
-        color: rgb(71, 83, 107);
-    }
     </style>
-
 
 
     <title>Alta fidelidade</title>
 </head>
 <body>
 
-<!-- VER SE VAI CONTINUAR
-<Section>
-    <img src="img/seta-esquerda.png" alt="seta para esquerda, volta um item"> 
-    <h2>Selected Works</h2>
-    <img src="img/seta-direita.png" alt="seta para direita, avança um item"> 
-</Section>
-
--->
 
 <section class="secao-de-itens">
 <ul class="lista-itens">
