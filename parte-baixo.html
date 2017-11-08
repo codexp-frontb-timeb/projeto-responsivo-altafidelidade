@@ -66,6 +66,7 @@
     /*  fim paragráfo que foi posicionado após a lista de links em duas colunas */
 
 
+    /* padrão para tablet */
     @media(min-width: 768px){
 
 
@@ -78,8 +79,9 @@
         }
 
     }
-    
-    
+    /* fim padrão para tablet */
+
+    /* padrão para celular */
     @media(min-width: 992px){
 
         .secao-de-itens{
@@ -89,8 +91,17 @@
         .lista-itens li{
             width: 40%;
         }
+        
+        .lista-itens__links:hover{
+        color: red;
+        font-size: 1.2em;
+        }
+    
     }
 
+    
+
+    /* fim padrão para celular */
 
     </style>
 
