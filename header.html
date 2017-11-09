@@ -30,22 +30,29 @@ body {
 .cabecalho{
     width: 100%;
     height: 30%;
+    position: relative;
 }
 .cabecalho__img{
     width: 100%;
-    height: 100%;
-    position: absolut;
 }
 .cabecalho__img__trem{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .cabecalho__menu{
     width: 100%;
     position: relative;
     top: -10%;
 }
+.cabecalho__img__menu{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.32);
+    background: transparent;
+}
 .cabecalho__img__menu__lista{
-    background-color: gray;
     text-align: center;
     color: white;
     margin: -4px;
@@ -56,24 +63,39 @@ body {
     font-size: 40px;
     text-transform: uppercase;
 }
-.cabecalho__img__menu__lista li:hover{
+/*.cabecalho__img__menu__lista li:first-child{
+    position: relative;
     background-color: black;
     color: red;
+}*/
+.cabecalho__img__menu__lista li div{
+    background-color: black;
+    opacity: 0.5;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
+.cabecalho__img__menu__lista li div strong{
+    color: red;
+    z-index: 1;
+}
+
     </style>
 </head>
 <body>
     <header class="cabecalho">
-        <figure class="cabecalho__img margem-figure">
-            <img class="cabecalho__img__trem" src="img/trilho.png" alt="trilho aereo">
-            <nav class="cabecalho__img__menu ">
-                    <ul class="cabecalho__img__menu__lista padding-ul">
-                        <li>Tech</li>
-                        <li>Ux</li>
-                        <li>Me</li>
-                    </ul>
-            </nav>
-        </figure>
+        <img class="cabecalho__img__trem" src="img/trilho.png" alt="trilho aereo">
+        <nav class="cabecalho__img__menu ">
+            <ul class="cabecalho__img__menu__lista padding-ul">
+                <li style="position: relative; color: red;">
+                    <div></div>
+                    <strong>Tech</strong>
+                </li>
+                <li>Ux</li>
+                <li>Me</li>
+            </ul>
+        </nav>
     </header>
 </body>
 </html>
